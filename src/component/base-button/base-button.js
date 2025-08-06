@@ -60,7 +60,7 @@ import "../main";
  * - Disabled button prevents click interaction and stops event propagation.
  */
 
-class BaseButton extends BaseComponent {
+export class BaseButton extends BaseComponent {
   static get observedAttributes() {
     return ["label", "variant", "disabled", "type", "action", "href"];
   }
