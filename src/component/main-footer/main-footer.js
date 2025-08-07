@@ -49,7 +49,7 @@ export class MainFooter extends BaseComponent {
         <p class="name text-3xl">ybunhong</p>
         <div class="contact-container flex items-center">
             <div class="pr-6">
-                <p class="text-3xl">Reaching me:</p>
+                <p class="contact-text text-3xl">Reaching me:</p>
             </div>
             <div class="icon-container flex gap-8">
                 ${navList}

@@ -75,7 +75,7 @@ export class HeroSection extends BaseComponent {
           ${this.label ? `<p>${this.label}</p>` : ""}
           ${
             this.primaryButton
-              ? `<div class="flex justify-center lg:justify-start">
+              ? `<div class="flex lg:justify-start">
                   <div class="w-[300px]">
                     <base-button label="${this.primaryButton}" href="${this.buttonHref}"></base-button>
                   </div>

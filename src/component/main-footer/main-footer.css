@@ -6,4 +6,7 @@
   .name {
     display: none;
   }
+  .contact-text {
+    font-size: x-large;
+  }
 }
