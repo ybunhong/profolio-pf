@@ -46,14 +46,14 @@ export class MainFooter extends BaseComponent {
     this.template = `
     <div class="max-width-container">
     <footer class="flex justify-between p-6 pt-10 pb-10">
-        <p class="text-3xl">ybunhong</p>
-        <div class="flex">
-        <div class="pr-6">
-            <p class="text-3xl">Reaching me:</p>
-        </div>
-        <div class="icon-container flex gap-8">
-            ${navList}
-        </div>
+        <p class="name text-3xl">ybunhong</p>
+        <div class="contact-container flex items-center">
+            <div class="pr-6">
+                <p class="text-3xl">Reaching me:</p>
+            </div>
+            <div class="icon-container flex gap-8">
+                ${navList}
+            </div>
         </div>
     </footer>
     </div>`;
