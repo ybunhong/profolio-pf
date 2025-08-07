@@ -9,13 +9,13 @@
 :root {
   font-family: Fredoka, Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  background-color: #f8fafc;
   color: #9aa6b2;
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-image: url("/src/assets/bg-img.jpg");
 }
 
 .max-width-container {
