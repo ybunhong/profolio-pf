@@ -30,20 +30,20 @@ export class MainHeader extends BaseComponent {
   updateTemplate() {
     this.template = `
     <header class="max-width-container">
-    <section class="flex flex-row justify-between">
+    <section class="flex flex-row justify-between pt-10 pb-10 text-blue-300">
         <div>
             <a href="#">
                 <p class="text-4xl">Y BUNHONG</p>
             </a>
         </div>
-        <div class="flex flex-row gap-4">
-            <a href="#">
+        <div class="flex flex-row gap-6">
+            <a href="#about">
             <p class="text-4xl underline">ABOUT</p>
             </a>
-            <a href="#">
+            <a href="#work">
             <p class="text-4xl underline">WORK</p>
             </a>
-            <a href="#">
+            <a href="#contact">
             <p class="text-4xl underline">CONTACT</p>
             </a>
         </div>
