@@ -48,47 +48,41 @@ export class HeroSection extends BaseComponent {
   }
 
   updateTemplate() {
+    const isMirrored = this.mirror === "true" || this.mirror === true;
+
     this.template = `
-    <section class="max-width-container">
-        <div class="flex flex-row gap-6 p-6">
+      <section class="max-w-[1280px] mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-6 p-6 ${
+          isMirrored ? "lg:flex-row-reverse" : ""
+        }">
+
+          <div class="w-full lg:w-1/2">
+            <img src="${
+              this.src
+            }" class="w-full h-auto object-cover rounded-xl shadow-md" />
+          </div>
+
+          <div class="w-full lg:w-1/2 flex flex-col gap-4 justify-center">
             ${
-              this.mirror
-                ? `<div class="image-container">
-                <img src=${this.src}>
-            </div>`
+              this.title
+                ? `<p class="text-2xl text-blue-300 font-medium">${this.title}</p>`
                 : ""
             }
-            <div class="flex flex-col gap-4">
-            <div class="w-auto">
-             ${
-               this.title
-                 ? `<p class="text-2xl text-blue-300 font-medium">${this.title}</p>`
-                 : ""
-             }
-            </div>
-            <div class="w-auto">
-                ${this.label ? `<p>${this.label}</p>` : ""}
-            </div>
+            ${this.label ? `<p>${this.label}</p>` : ""}
             ${
               this.primaryButton
-                ? `<div class="button-container w-full flex justify-center items-center">
-                <div class="w-[300px]">
-                <base-button label="${this.primaryButton}" href="${this.buttonHref}"></button>
-            </div>
-            </div>`
+                ? `<div class="flex justify-center lg:justify-start">
+                    <div class="w-[300px]">
+                      <base-button label="${this.primaryButton}" href="${this.buttonHref}"></base-button>
+                    </div>
+                  </div>`
                 : ""
             }
-            </div>
-            ${
-              this.mirror
-                ? ""
-                : `<div class="image-container">
-                <img src=${this.src}>
-            </div>`
-            }
+          </div>
         </div>
-    </section>
+      </section>
     `;
+
     this.render();
   }
 }
