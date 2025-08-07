@@ -9,5 +9,5 @@ export default defineConfig({
       },
     },
   },
-  assetsInclude: ["**/*.svg"],
+  assetsInclude: ["**/*.jpg", "**/*.png", "**/*.svg"],
 });
