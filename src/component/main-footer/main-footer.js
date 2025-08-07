@@ -1,9 +1,9 @@
 import "./main-footer.css";
 import { BaseComponent } from "../base-component";
-import telegram from "/src/assets/icons/telegram.svg";
-import facebook from "/src/assets/icons/facebook.svg";
-import instagram from "/src/assets/icons/instagram.svg";
-import linkin from "/src/assets/icons/linkin.svg";
+import telegram from "/icons/telegram.svg";
+import facebook from "/icons/facebook.svg";
+import instagram from "/icons/instagram.svg";
+import linkin from "/icons/linkin.svg";
 
 export class MainFooter extends BaseComponent {
   static ["label"];
