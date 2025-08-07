@@ -1,3 +1,12 @@
 .icon-container icon-button {
   filter: brightness(0) invert(1);
 }
+
+@media (max-width: 999px) {
+  .name {
+    display: none;
+  }
+  .contact-text {
+    font-size: x-large;
+  }
+}

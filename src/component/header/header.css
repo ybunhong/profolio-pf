@@ -1,0 +1,11 @@
+@media (max-width: 999px) {
+  .header-container {
+    font-size: x-large;
+  }
+}
+
+@media (max-width: 500px) {
+  .link-container {
+    display: none;
+  }
+}
